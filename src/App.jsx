@@ -9,17 +9,6 @@ function App() {
   const [activeMenu, setActiveMenu] = useState("Home");
 
   return (
-    // <Box
-    //   sx={{
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     height: "100vh",
-    //     width: "100%",
-    //     bgcolor: "#0f172a",
-    //     color: "#fff",
-    //     overflow: "auto",
-    //   }}
-    // >
     <>
       <CssBaseline />
       <Navbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
@@ -34,7 +23,6 @@ function App() {
       </Box>
       <Footer />
     </>
-    // </Box>
   );
 }
 
