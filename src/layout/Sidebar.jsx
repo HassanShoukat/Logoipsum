@@ -58,7 +58,6 @@ function Sidebar() {
         </Typography>
         {showProfitability ? <ExpandMoreIcon /> : <ChevronRightIcon />}
       </Box>
-
       <Collapse in={showProfitability}>
         <Typography variant="body2" sx={{ color: "#ccc", mb: 1, ml: 1.5 }}>
           Profitability
@@ -78,7 +77,6 @@ function Sidebar() {
           </Typography>
           {showProfit ? <ExpandMoreIcon /> : <ChevronRightIcon />}
         </Box>
-
         <Collapse in={showProfit}>
           <List dense>
             {items.map((item, index) => (
@@ -110,7 +108,6 @@ function Sidebar() {
           </Typography>
           {showOther ? <ExpandMoreIcon /> : <ChevronRightIcon />}
         </Box>
-
         <Collapse in={showOther}>
           <List dense>
             {[
@@ -135,7 +132,6 @@ function Sidebar() {
       </Box>
     </Box>
   );
-
   return (
     <>
       <IconButton
