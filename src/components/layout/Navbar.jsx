@@ -53,7 +53,7 @@ function Navbar({ activeMenu, setActiveMenu }) {
               onClick={() => setActiveMenu(menu)}
               sx={{
                 cursor: "pointer",
-                color: "white",
+                color: activeMenu === menu ? "white" : "#FFFEFE80",
                 fontWeight: activeMenu === menu ? 600 : 400,
                 "&:hover": { color: "white" },
                 fontSize: "16px",
