@@ -53,13 +53,17 @@ function Sidebar() {
           mb: 1,
         }}
       >
-        <Typography variant="body2" fontWeight={600}>
+        <Typography variant="body2" fontWeight={700} fontSize={"16px"}>
           Profitability Leaderboard
         </Typography>
         {showProfitability ? <ExpandMoreIcon /> : <ChevronRightIcon />}
       </Box>
       <Collapse in={showProfitability}>
-        <Typography variant="body2" sx={{ color: "#ccc", mb: 1, ml: 1.5 }}>
+        <Typography
+          fontWeight={400}
+          fontSize={"16px"}
+          sx={{ color: "#ccc", mb: 1, ml: 1.5 }}
+        >
           Profitability
         </Typography>
       </Collapse>
@@ -72,7 +76,7 @@ function Sidebar() {
             cursor: "pointer",
           }}
         >
-          <Typography variant="body2" fontWeight={600}>
+          <Typography variant="body2" fontWeight={700} fontSize={"16px"}>
             Win Pct% Leaderboards
           </Typography>
           {showProfit ? <ExpandMoreIcon /> : <ChevronRightIcon />}
@@ -103,7 +107,7 @@ function Sidebar() {
             cursor: "pointer",
           }}
         >
-          <Typography variant="body2" fontWeight={600}>
+          <Typography variant="body2" fontWeight={700} fontSize={"16px"}>
             Other Leaderboards
           </Typography>
           {showOther ? <ExpandMoreIcon /> : <ChevronRightIcon />}
@@ -119,6 +123,8 @@ function Sidebar() {
               <ListItem
                 key={index}
                 sx={{
+                  fontWeight: 400,
+                  fontSize: "16px",
                   cursor: "pointer",
                   color: "#ccc",
                   "&:hover": { color: "#fff" },

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Typography, Button, Avatar, Chip } from "@mui/material";
 
-import Warning from "../../icons/Warning";
+import Warning from "../../../icons/Warning";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function ProfitLeaderboard() {
@@ -51,35 +51,32 @@ export default function ProfitLeaderboard() {
         <Box
           display="flex"
           sx={{
-            flexDirection: {
-              xs: "column",
-              md: "row",
-            },
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: { md: "center" },
           }}
           gap={1}
           alignItems="center"
-          justifyContent="space-between"
         >
           <Box
             sx={{
-              display: {
-                xs: "flex",
-                md: "none",
-                lg: "flex",
-              },
+              display: { xs: "flex", md: "none", lg: "flex" },
               alignItems: "center",
               gap: 1,
             }}
           >
-            <Box>
-              <Warning />
-            </Box>
+            <Warning />
             <Typography fontSize={13}>
               Minimum Bets To Qualify For 7D Leaderboard: 10 Bets
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", gap: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
             <Box
               sx={{
                 display: { xs: "none", md: "flex" },
@@ -87,6 +84,7 @@ export default function ProfitLeaderboard() {
                 background: "white",
                 p: 1,
                 borderRadius: 1,
+                flexWrap: "wrap",
               }}
             >
               {buttons.map((btn) => (
@@ -94,7 +92,6 @@ export default function ProfitLeaderboard() {
                   key={btn}
                   onClick={() => setTimeframe(btn)}
                   sx={{
-                    display: { xs: "none", md: "block" },
                     textTransform: "none",
                     minWidth: "auto",
                     px: 1.5,
@@ -122,14 +119,14 @@ export default function ProfitLeaderboard() {
           </Box>
         </Box>
       </Box>
-      <Box>
+      <Box sx={{ width: "100%", overflowX: "hidden" }}>
         <Box
           sx={{
             display: { xs: "none", md: "grid" },
             gridTemplateColumns: "80px 3fr 1fr 1fr .75fr 120px",
             fontSize: 14,
             color: "gray",
-            p: 2,
+            p: 1,
             mt: 1,
             bgcolor: "rgba(0,0,0,15%)",
             borderRadius: 2,
@@ -149,15 +146,16 @@ export default function ProfitLeaderboard() {
             sx={{
               display: "grid",
               gridTemplateColumns: {
-                xs: "50px 1fr",
+                xs: "40px 1fr",
                 md: "80px 3fr 1fr 1fr .75fr 120px",
               },
               alignItems: "center",
-              gap: { xs: 1, md: 0 },
+              gap: 1,
               py: 2,
               px: { xs: 1, md: 2 },
               border: "1px solid #e5e7eb",
               borderTop: index === 0 ? "none" : "1px solid #e5e7eb",
+              width: "100%",
             }}
           >
             <Box
@@ -170,16 +168,28 @@ export default function ProfitLeaderboard() {
                 alignItems: "center",
                 justifyContent: "center",
                 fontSize: 12,
+                color: "black",
               }}
             >
               {index + 1}
             </Box>
-            <Box display="flex" alignItems="center" gap={2}>
+            <Box
+              display="flex"
+              alignItems="center"
+              gap={2}
+              sx={{ minWidth: 0 }}
+            >
               <Avatar src="/Ellipse.png" />
-              <Box>
+              <Box sx={{ minWidth: 0 }}>
                 <Typography
                   fontWeight={700}
-                  sx={{ color: "black", fontSize: 12 }}
+                  sx={{
+                    color: "black",
+                    fontSize: 12,
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
                 >
                   {item.name}
                 </Typography>
@@ -233,12 +243,9 @@ export default function ProfitLeaderboard() {
                 width: 36,
                 height: 36,
                 minWidth: 36,
-                display: {
-                  xs: "none",
-                  md: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                },
+                display: { xs: "none", md: "flex" },
+                justifyContent: "center",
+                alignItems: "center",
                 mx: "auto",
               }}
             >

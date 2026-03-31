@@ -27,20 +27,26 @@ function Navbar({ activeMenu, setActiveMenu }) {
       position="unset"
       sx={{
         background: "linear-gradient(to right, #031C46, #06409E)",
-        py: menuOpen ? 2 : 1,
       }}
     >
       <Toolbar
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          px: { xs: 2, md: 4 },
+          px: { xs: 2, md: "32px" },
+          py: "16px",
         }}
       >
         <Box sx={{ width: 180 }}>
           <img src="logo.png" alt="Logo" width="100%" />
         </Box>
-        <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3, px: 2 }}>
+        <Box
+          sx={{
+            display: { xs: "none", lg: "flex" },
+            gap: "32px",
+            px: 2,
+          }}
+        >
           {menus.map((menu, index) => (
             <Typography
               key={index}
@@ -48,8 +54,9 @@ function Navbar({ activeMenu, setActiveMenu }) {
               sx={{
                 cursor: "pointer",
                 color: activeMenu === menu ? "black" : "white",
-                fontWeight: activeMenu === menu ? 600 : 400,
+                fontWeight: activeMenu === menu ? 700 : 400,
                 "&:hover": { color: "black" },
+                fontSize: "16px",
               }}
             >
               {menu}
@@ -60,6 +67,7 @@ function Navbar({ activeMenu, setActiveMenu }) {
           <Button
             variant="outlined"
             sx={{
+              fontSize: "16px",
               borderColor: "#0B99FF",
               color: "#0B99FF",
               "&:hover": {

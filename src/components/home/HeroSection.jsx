@@ -7,11 +7,11 @@ import {
   Button,
 } from "@mui/material";
 
-import ChatIcon from "../icons/ChatIcon";
-import Statusicon from "../icons/Statusicon";
-import Shopicon from "../icons/Shopicon";
-import Subscribeicon from "../icons/Subscribeicon";
-import Bellicon from "../icons/Bellicon";
+import ChatIcon from "../../icons/ChatIcon";
+import Statusicon from "../../icons/Statusicon";
+import Shopicon from "../../icons/Shopicon";
+import Subscribeicon from "../../icons/Subscribeicon";
+import Bellicon from "../../icons/Bellicon";
 
 function HeroSection() {
   const cards = [
@@ -66,7 +66,7 @@ function HeroSection() {
   return (
     <Box
       sx={{
-        py: { xs: 6, md: 10 },
+        py: { xs: 4, md: 8 },
         textAlign: "center",
         color: "white",
         background: "linear-gradient(to right,#052d61,#05244d,#5d7cb4)",
@@ -86,21 +86,25 @@ function HeroSection() {
         <Typography
           sx={{
             color: "#6ec1ff",
-            fontSize: { xs: 11, sm: 13 },
+            fontSize: { xs: 11, md: "20px" },
+            fontWeight: 600,
             mb: 1,
           }}
         >
           THE SPORTSBETTING LEADERBOARDS
         </Typography>
         <Typography
-          fontWeight="bold"
           sx={{
             fontSize: {
               xs: "1.6rem",
               sm: "2rem",
-              md: "2.5rem",
+              md: "63px",
             },
             mb: 2,
+            fontFamily: "Bebas Neue",
+            fontWeight: 400,
+            letterSpacing: 0,
+            lineHeight: "100%",
           }}
         >
           WIN MORE BETS WITH BETEXPERTS YOU TRUST
@@ -108,9 +112,10 @@ function HeroSection() {
         <Typography
           sx={{
             color: "#cbd5e1",
-            fontSize: { xs: 14, md: 16 },
-            mb: 4,
+            fontSize: { xs: 14, md: "18px" },
+            mb: 2,
             px: { xs: 1, md: 0 },
+            fontWeight: 400,
           }}
         >
           Find & Subscribe the best bettors on the internet using the
@@ -124,7 +129,8 @@ function HeroSection() {
             px: { xs: 3, md: 4 },
             py: { xs: 1, md: 1.2 },
             mb: { xs: 2, md: 4 },
-            fontSize: { xs: 14, md: 16 },
+            fontSize: { xs: 14, md: "16px" },
+            fontWeight: 400,
             width: { xs: "100%", sm: "auto" },
           }}
         >
@@ -152,11 +158,12 @@ function HeroSection() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
+                gap: "12px",
               }}
             >
               <Card
                 sx={{
-                  width: { xs: 240, md: 380 },
+                  width: { xs: 240, md: "392px" },
                   borderRadius: 3,
                   boxShadow: 6,
                   textAlign: "left",
@@ -168,9 +175,10 @@ function HeroSection() {
                   }}
                 >
                   <Typography
-                    fontWeight="bold"
+                    fontWeight="semibold"
                     sx={{
-                      fontSize: { xs: 16, md: 18 },
+                      fontSize: { xs: 16, md: "20px" },
+                      fontWeight: 600,
                     }}
                   >
                     {card.title}
@@ -179,8 +187,9 @@ function HeroSection() {
                   <Typography
                     sx={{
                       color: "gray",
-                      mb: 2,
-                      fontSize: { xs: 10, md: 12 },
+                      mb: 1,
+                      fontSize: { xs: 10, md: "12px" },
+                      fontWeight: 400,
                     }}
                   >
                     {card.description}
@@ -194,8 +203,8 @@ function HeroSection() {
                         gap: { xs: 1.5, md: 2 },
                         background: "#f3f4f6",
                         borderRadius: 2,
-                        p: { xs: 1.2, md: 1.5 },
-                        mb: 1.5,
+                        p: { xs: 1.2, md: "10px" },
+                        mb: 1,
                       }}
                     >
                       <Box
@@ -211,9 +220,10 @@ function HeroSection() {
                       </Box>
                       <Box>
                         <Typography
-                          fontWeight="bold"
+                          fontWeight="semibold"
                           sx={{
-                            fontSize: { xs: 13, md: 14 },
+                            fontSize: { xs: 13, md: "15px" },
+                            fontWeight: 600,
                           }}
                         >
                           {item.title}

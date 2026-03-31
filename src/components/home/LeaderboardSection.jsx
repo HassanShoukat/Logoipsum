@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, Typography, Tabs, Tab, Button } from "@mui/material";
 
-import ProfitLeaderboard from "./leaderBoard_Tabs/ProfitLeaderboard";
-import ComingSoon from "./leaderBoard_Tabs/ComingSoon";
+import ProfitLeaderboard from "./leaderBoard-Tabs/ProfitLeaderboard";
+import ComingSoon from "./leaderBoard-Tabs/ComingSoon";
 
 export default function LeaderboardSection() {
   const [activeTab, setActiveTab] = useState(0);
@@ -14,7 +14,6 @@ export default function LeaderboardSection() {
   return (
     <Box
       sx={{
-        backgroundColor: "#f3f4f6",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",

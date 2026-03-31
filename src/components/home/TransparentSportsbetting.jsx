@@ -4,7 +4,6 @@ function TransparentSportsbetting() {
   return (
     <Box
       sx={{
-        backgroundColor: "#f3f4f6",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -19,24 +18,21 @@ function TransparentSportsbetting() {
           color: "white",
           borderRadius: 2,
           display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
           overflow: "hidden",
         }}
       >
-        <Box sx={{ p: { xs: 2, md: 3 } }}>
+        <Box sx={{ p: { xs: 2, md: 3 }, flex: 1 }}>
           <Typography
             sx={{
-              fontSize: { xs: 18, md: 24 },
-              fontWeight: 600,
-              mb: 1,
+              fontSize: { xs: "16px", md: "29px" },
+              fontWeight: "semibold",
             }}
           >
             The Most Transparent Sportsbetting Location
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 13, md: 14 },
+              fontSize: { xs: 13, md: "18px" },
               color: "#bfdbfe",
               mb: 2,
             }}
@@ -61,8 +57,10 @@ function TransparentSportsbetting() {
           alt="leaderboard"
           sx={{
             height: "100%",
+            width: "auto",
             objectFit: "cover",
             display: { xs: "none", lg: "block" },
+            alignSelf: "stretch",
           }}
         />
       </Box>

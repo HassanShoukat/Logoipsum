@@ -7,7 +7,6 @@ export default function Betleaders() {
     <Box
       component="section"
       sx={{
-        backgroundColor: "#f3f4f6",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",

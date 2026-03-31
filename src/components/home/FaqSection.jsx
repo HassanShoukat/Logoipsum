@@ -77,7 +77,6 @@ function FaqSection() {
   return (
     <Box
       sx={{
-        bgcolor: "#f3f4f6",
         display: "flex",
         justifyContent: "center",
         p: 2,

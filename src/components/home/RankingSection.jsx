@@ -1,4 +1,4 @@
-import { RankingData } from "../utils/RankingData";
+import { RankingData } from "../../utils/RankingData";
 import {
   Box,
   Typography,
@@ -13,7 +13,6 @@ function RankingSection() {
   return (
     <Box
       sx={{
-        bgcolor: "#f3f4f6",
         display: "flex",
         justifyContent: "center",
         p: 2,
