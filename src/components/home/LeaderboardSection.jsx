@@ -42,16 +42,18 @@ export default function LeaderboardSection() {
           <Box sx={{ maxWidth: 600 }}>
             <Typography
               sx={{
-                fontWeight: 600,
+                fontWeight: "semibold",
                 color: "black",
-                mb: 1,
-                fontSize: { sx: 20, md: 28 },
+                mb: 0.5,
+                fontSize: { sx: 20, md: "32px" },
               }}
             >
               The Sportsbetting Leaderboards
             </Typography>
 
-            <Typography sx={{ color: "gray", fontSize: 14 }}>
+            <Typography
+              sx={{ color: "gray", fontSize: "16px", fontWeight: 400 }}
+            >
               Over 18+ Leaderboards To Help You Effortlessly Locate The
               <br /> Best Sportsbettors On The Internet
             </Typography>
@@ -63,6 +65,8 @@ export default function LeaderboardSection() {
               textTransform: "none",
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },
+              fontSize: "16px",
+              fontWeight: 400,
             }}
           >
             View Leaderboards
@@ -78,15 +82,15 @@ export default function LeaderboardSection() {
         >
           <Tab
             label="Profitability Leaderboard"
-            sx={{ textTransform: "none", fontSize: 14 }}
+            sx={{ textTransform: "none", fontSize: "20px" }}
           />
           <Tab
             label="Win Rate Leaderboards"
-            sx={{ textTransform: "none", fontSize: 14 }}
+            sx={{ textTransform: "none", fontSize: "20px" }}
           />
           <Tab
             label="Extra Leaderboards"
-            sx={{ textTransform: "none", fontSize: 14 }}
+            sx={{ textTransform: "none", fontSize: "20px" }}
           />
         </Tabs>
         {activeTab === 0 && <ProfitLeaderboard />}

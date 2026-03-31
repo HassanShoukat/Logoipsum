@@ -24,8 +24,8 @@ function KeySection() {
         <Typography
           sx={{
             color: "#2563eb",
-            fontSize: 14,
-            fontWeight: 500,
+            fontSize: "16px",
+            fontWeight: 700,
             mb: 1,
           }}
         >
@@ -44,8 +44,8 @@ function KeySection() {
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: 20, md: 28 },
-                fontWeight: 600,
+                fontSize: { xs: 20, md: "32px" },
+                fontWeight: "semibold",
                 color: "#1f2937",
               }}
             >
@@ -54,7 +54,7 @@ function KeySection() {
             <Typography
               sx={{
                 color: "#6b7280",
-                fontSize: 14,
+                fontSize: "16px",
                 mb: 1,
               }}
             >
@@ -67,6 +67,7 @@ function KeySection() {
           <Button
             variant="contained"
             sx={{
+              fontSize: "16px",
               textTransform: "none",
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },
@@ -89,22 +90,25 @@ function KeySection() {
                   p: 2,
                 }}
               >
-                <Box display="flex" alignItems="center" gap={1.5} mb={2}>
-                  <Box
-                    sx={{
-                      backgroundColor: index === 0 ? "#B50E0E1A" : "#0E7A0E1A",
-                      width: 36,
-                      height: 36,
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
+                <Box
+                  sx={{
+                    backgroundColor: index === 0 ? "#B50E0E1A" : "#0E7A0E1A",
+                    width: 36,
+                    height: 36,
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Icon />
+                </Box>
+                <Box display="flex" alignItems="center" mb={1}>
+                  <Typography
+                    fontWeight={"semibold"}
+                    fontSize={"20px"}
+                    color="#1f2937"
                   >
-                    <Icon />
-                  </Box>
-
-                  <Typography fontWeight={600} color="#1f2937">
                     {card.title}
                   </Typography>
                 </Box>
@@ -114,7 +118,7 @@ function KeySection() {
                     return (
                       <Box key={i} display="flex" alignItems="center" gap={1}>
                         <ItemIcon />
-                        <Typography fontSize={14} color="#6b7280">
+                        <Typography fontSize={"16px"} color="#6b7280">
                           {item.text}
                         </Typography>
                       </Box>

@@ -87,7 +87,7 @@ function HeroSection() {
           sx={{
             color: "#6ec1ff",
             fontSize: { xs: 11, md: "20px" },
-            fontWeight: 600,
+            fontWeight: "semibold",
             mb: 1,
           }}
         >
@@ -183,7 +183,6 @@ function HeroSection() {
                   >
                     {card.title}
                   </Typography>
-
                   <Typography
                     sx={{
                       color: "gray",
@@ -228,7 +227,6 @@ function HeroSection() {
                         >
                           {item.title}
                         </Typography>
-
                         <Typography
                           sx={{
                             fontSize: { xs: 11, md: 12 },
@@ -248,6 +246,10 @@ function HeroSection() {
                       textTransform: "none",
                       fontSize: { xs: 14, md: 15 },
                       py: { xs: 1, md: 1.2 },
+                      backgroundColor: i === 0 ? "#071d3a" : "#8E52FF",
+                      "&:hover": {
+                        backgroundColor: i === 0 ? "#000" : "#6d28d9",
+                      },
                     }}
                   >
                     {card.button}

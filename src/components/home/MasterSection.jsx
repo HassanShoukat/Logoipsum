@@ -41,8 +41,8 @@ function MasterSection() {
         <Typography
           sx={{
             color: "#2563eb",
-            fontSize: 14,
-            fontWeight: 500,
+            fontSize: "16px",
+            fontWeight: 700,
             mb: 1,
           }}
         >
@@ -58,8 +58,8 @@ function MasterSection() {
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: 20, md: 28 },
-                fontWeight: 600,
+                fontSize: { xs: 20, md: "32px" },
+                fontWeight: "semibold",
                 color: "#1f2937",
               }}
             >
@@ -68,14 +68,14 @@ function MasterSection() {
             <Typography
               sx={{
                 color: "#6b7280",
-                fontSize: 12,
-                maxWidth: 600,
+                fontSize: "16px",
+                maxWidth: 800,
               }}
             >
               Never settle for the worst odds again!
               <br />
-              Maximize your profit by placing your bet on the right sportsbook.
-              Quickly compare the odds for your
+              Maximize your profit by placing your bet on right sportsbook.
+              Quickly compare odds for your
               <br />
               selections across over 6 different sportsbooks to ensure you're
               winning the most money from your bet.
@@ -87,6 +87,7 @@ function MasterSection() {
               textTransform: "none",
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },
+              fontSize: "16px",
             }}
           >
             The Master Sportsbook
@@ -103,13 +104,13 @@ function MasterSection() {
                 p: 2,
                 display: "flex",
                 flexDirection: "column",
-                gap: 1.5,
+                gap: 1,
                 bgcolor: "#f3f4f6",
               }}
             >
               <Tickicon />
               <Typography
-                fontSize={14}
+                fontSize={"16px"}
                 color="#374151"
                 sx={{ mt: index === 1 || index === 2 ? 3 : "" }}
               >

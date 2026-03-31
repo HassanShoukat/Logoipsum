@@ -29,8 +29,8 @@ export default function Betleaders() {
           <Box sx={{ width: { md: "50%" } }}>
             <Typography
               sx={{
-                fontSize: { sx: 20, md: 28 },
-                fontWeight: 600,
+                fontSize: { sx: 20, md: "32px" },
+                fontWeight: "semibold",
                 color: "#1f2937",
                 mb: 2,
               }}
@@ -39,28 +39,40 @@ export default function Betleaders() {
             </Typography>
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-              <Box sx={{ borderLeft: "2px solid #3b82f6", pl: 2 }}>
+              <Box sx={{ borderLeft: "2px solid #3b82f6", pl: 1 }}>
                 <Typography
                   sx={{
-                    fontWeight: 600,
+                    fontWeight: "semibold",
+                    fontSize: "16px",
                     color: "#1f2937",
                     mb: 0.5,
                   }}
                 >
                   Let's face it
                 </Typography>
-                <Typography sx={{ color: "#4b5563", fontSize: 14 }}>
+                <Typography
+                  sx={{ color: "#4b5563", fontSize: "16px", fontWeight: 400 }}
+                >
                   Sportsbetting is tough. Sportsbooks are designed to stack the
                   odds
                   <br /> against you, making it difficult to turn a profit.
                 </Typography>
               </Box>
-              <Box sx={{ borderLeft: "2px solid #3b82f6", pl: 2 }}>
-                <Typography sx={{ fontWeight: 600, color: "#1f2937", mb: 0.5 }}>
+              <Box sx={{ borderLeft: "2px solid #3b82f6", pl: 1 }}>
+                <Typography
+                  sx={{
+                    fontWeight: "semibold",
+                    fontSize: "16px",
+                    color: "#1f2937",
+                    mb: 0.5,
+                  }}
+                >
                   Yet
                 </Typography>
-                <Typography sx={{ color: "#4b5563", fontSize: 14 }}>
-                  There are people out there cashing in bets and killing the
+                <Typography
+                  sx={{ color: "#4b5563", fontSize: "16px", fontWeight: 400 }}
+                >
+                  There are people out there cashing in bets and killing
                   sportsbooks,
                   <br /> allowing them to profit week in-week out due to their
                   expert-level
@@ -72,7 +84,9 @@ export default function Betleaders() {
               sx={{
                 color: "#2563eb",
                 fontWeight: 600,
-                mt: 3,
+                fontWidth: "semibold",
+                fontSize: "20px",
+                mt: 2,
               }}
             >
               That's where Betleaders Comes in!
@@ -95,22 +109,22 @@ export default function Betleaders() {
                   justifyContent: "space-between",
                   alignItems: "center",
                   borderRadius: 1,
-                  px: 3,
+                  px: 2,
                   py: 1.5,
-                  width: 220,
+                  width: 300,
                   ml: index === 0 ? 0 : index === 1 ? 1 : index === 2 ? 3 : 5,
                   backgroundColor: index === 3 ? "#EAEEF0" : "white",
                   color: index === 3 ? "#1e3a8a" : "#374151",
-                  mb: 1,
+                  mb: 1.5,
                 }}
               >
-                <Typography sx={{ fontSize: 14, fontWeight: 500 }}>
+                <Typography sx={{ fontSize: "16px", fontWeight: "bold" }}>
                   Payout
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: 14,
-                    fontWeight: 600,
+                    fontSize: "16px",
+                    fontWeight: "bold",
                     color: "#2563eb",
                   }}
                 >

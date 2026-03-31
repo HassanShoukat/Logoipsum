@@ -20,13 +20,16 @@ function AccountSection() {
           maxWidth: 1150,
         }}
       >
-        <Typography variant="body2" sx={{ color: "#2563eb", mb: 1 }}>
+        <Typography
+          variant="body2"
+          sx={{ color: "#2563eb", mb: 1, fontSize: "16px", fontWeight: 700 }}
+        >
           Account Type
         </Typography>
-        <Typography variant="h5" fontWeight={600} sx={{ mb: 1 }}>
+        <Typography fontWeight={"semibold"} fontSize={"32px"}>
           Choose Your Own Path On Betleaders
         </Typography>
-        <Typography variant="body2" sx={{ color: "gray", mb: 3 }}>
+        <Typography fontSize={"16px"} sx={{ color: "gray", mb: 2 }}>
           Choose Your Account Type And See How Easy It Is To Make Money
           Sportsbetting
         </Typography>
@@ -50,7 +53,12 @@ function AccountSection() {
                   bgcolor: "#f3f4f6",
                 }}
               >
-                <Typography color="#2563eb">{account.subtitle}</Typography>
+                <Typography
+                  color="#2563eb"
+                  sx={{ fontSize: "14px", fontWidth: "semibold" }}
+                >
+                  {account.subtitle}
+                </Typography>
                 <Stack
                   direction="row"
                   spacing={2}
@@ -95,10 +103,10 @@ function AccountSection() {
                         {item.number}.
                       </Typography>
                       <Stack>
-                        <Typography fontWeight="semibold">
+                        <Typography fontWeight="semibold" fontSize={"16px"}>
                           {item.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography fontSize={"12px"} color="text.secondary">
                           {item.desc}
                         </Typography>
                       </Stack>
@@ -108,7 +116,8 @@ function AccountSection() {
                 <Button
                   variant="contained"
                   sx={{
-                    mt: 2,
+                    mt: 1,
+                    fontSize: "16px",
                     backgroundColor: account.buttonClass.includes("071d3a")
                       ? "#071d3a"
                       : "#8E52FF",

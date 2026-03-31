@@ -78,7 +78,7 @@ function Footer() {
             gap: 2,
           }}
         >
-          <Typography variant="h6" fontWeight={600}>
+          <Typography variant="h1" fontSize={"42px"} fontWeight={"semibold"}>
             Your Betting Career Starts Here..
           </Typography>
           <Button
@@ -91,7 +91,7 @@ function Footer() {
               color: "#0b2a52",
               px: { xs: 1.5, md: 2 },
               py: { xs: 0.3, md: 0.5 },
-              fontSize: { xs: "0.7rem", md: "0.8rem" },
+              fontSize: { xs: "0.7rem", md: "16px" },
               "&:hover": { backgroundColor: "#e3f2fd" },
             }}
           >
@@ -116,10 +116,10 @@ function Footer() {
                 <Typography
                   key={idx}
                   sx={{
-                    marginY: 0.5,
-                    fontSize: "0.9rem",
+                    color: i === 2 ? "#FFFEFE80" : "white",
+                    marginY: 3,
+                    fontSize: "14px",
                     cursor: "pointer",
-                    "&:hover": { color: "#90caf9" },
                   }}
                 >
                   {link}
@@ -128,7 +128,9 @@ function Footer() {
             </Box>
           ))}
           <Box sx={{ flex: "1 1 250px" }}>
-            <Typography sx={{ fontSize: "0.8rem", color: "#90caf9", mb: 1 }}>
+            <Typography
+              sx={{ fontSize: "0.8rem", color: "#90caf9", mb: 4, mt: 3 }}
+            >
               Subscribe to our newsletter for the latest
               <br />
               features, updates, and opportunities.
@@ -173,7 +175,7 @@ function Footer() {
             </Box>
           </Box>
         </Box>
-        <Typography variant="body2" sx={{ color: "#90caf9", mt: 6 }}>
+        <Typography variant="body2" sx={{ color: "#FFFEFE80", mt: 6 }}>
           © 2025 - Betexpert. All rights reserved.
         </Typography>
       </Box>

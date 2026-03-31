@@ -20,17 +20,19 @@ function RankingSection() {
     >
       <Paper sx={{ maxWidth: 1150, width: "100%", p: 3, borderRadius: 2 }}>
         <Box mb={4}>
-          <Typography sx={{ color: "#2563eb", fontSize: 14, fontWeight: 500 }}>
+          <Typography
+            sx={{ color: "#2563eb", fontSize: "16px", fontWeight: 700 }}
+          >
             Complete Transparency
           </Typography>
           <Typography
-            fontWeight={600}
+            fontWeight={"semibold"}
             mt={1}
-            sx={{ fontSize: { sx: 20, md: 28 } }}
+            sx={{ fontSize: { sx: 20, md: "32px" } }}
           >
             Ranking Betexperts On The Leaderboards
           </Typography>
-          <Typography variant="body2" color="text.secondary" mt={1}>
+          <Typography fontSize={"16px"} color="text.secondary" mt={1}>
             Betleaders empowers you to follow self-proclaimed expert sports
             betters by ranking
             <br /> them on the ultimate tool for transparency and trust: the
@@ -65,7 +67,7 @@ function RankingSection() {
                     {item.number}
                   </Box>
 
-                  <Typography fontWeight={600} mb={1}>
+                  <Typography fontWeight={"semibold"} fontSize={"20px"} mb={1}>
                     {item.title}
                   </Typography>
 
@@ -74,7 +76,7 @@ function RankingSection() {
                     color="text.secondary"
                     sx={{
                       mt: index === 0 ? 6 : index === 2 ? 4 : 1,
-                      fontSize: { xs: 12, md: 17 },
+                      fontSize: { xs: 12, md: "16px" },
                     }}
                   >
                     {item.description}
@@ -98,10 +100,10 @@ function RankingSection() {
           }}
         >
           <Box>
-            <Typography fontWeight={600} fontSize={20}>
+            <Typography fontWeight={"semibold"} fontSize={"20px"}>
               Want to finally be a profitable sportsbettor?
             </Typography>
-            <Typography variant="body2" sx={{ color: "#bfdbfe" }}>
+            <Typography fontSize={"16px"} sx={{ color: "#bfdbfe" }}>
               Use the leaderboards & find the most profitable sportsbettors
               <br /> to tail their picks and start betting like a pro!
             </Typography>
@@ -109,6 +111,7 @@ function RankingSection() {
           <Button
             variant="contained"
             sx={{
+              fontSize: "16px",
               textTransform: "none",
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },

@@ -93,15 +93,15 @@ function FaqSection() {
         }}
       >
         <Typography
-          sx={{ color: "#2563eb", fontSize: 14, fontWeight: 500, mb: 1 }}
+          sx={{ color: "#2563eb", fontSize: "16px", fontWeight: 700, mb: 1 }}
         >
           Availability
         </Typography>
 
         <Typography
-          fontWeight={600}
-          mb={2}
-          sx={{ fontSize: { sx: 20, md: 28 } }}
+          fontWeight={"semibold"}
+          mb={1}
+          sx={{ fontSize: { sx: 20, md: "32px" } }}
         >
           Frequently asked questions
         </Typography>
@@ -120,12 +120,14 @@ function FaqSection() {
             }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>{faq.question}</Typography>
+              <Typography fontSize={"16px"} fontWeight={"bold"}>
+                {faq.question}
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>
               <Typography
-                variant="body2"
+                fontSize={"16px"}
                 color="text.secondary"
                 sx={{ width: { sx: "100%", md: "50%" } }}
               >

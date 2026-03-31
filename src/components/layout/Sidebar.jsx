@@ -87,6 +87,8 @@ function Sidebar() {
               <ListItem
                 key={index}
                 sx={{
+                  fontSize: "16px",
+                  fontWeight: 400,
                   cursor: "pointer",
                   color: "#ccc",
                   "&:hover": { color: "#fff" },

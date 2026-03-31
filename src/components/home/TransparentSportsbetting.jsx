@@ -21,11 +21,12 @@ function TransparentSportsbetting() {
           overflow: "hidden",
         }}
       >
-        <Box sx={{ p: { xs: 2, md: 3 }, flex: 1 }}>
+        <Box sx={{ p: { xs: 1, md: 2 }, flex: 1 }}>
           <Typography
             sx={{
-              fontSize: { xs: "16px", md: "29px" },
+              fontSize: { xs: "16px", md: "30px" },
               fontWeight: "semibold",
+              letterSpacing: 0,
             }}
           >
             The Most Transparent Sportsbetting Location
@@ -46,6 +47,7 @@ function TransparentSportsbetting() {
               textTransform: "none",
               backgroundColor: "#2ea3f2",
               "&:hover": { backgroundColor: "#1e88e5" },
+              fontSize: "16px",
             }}
           >
             View Leaderboards

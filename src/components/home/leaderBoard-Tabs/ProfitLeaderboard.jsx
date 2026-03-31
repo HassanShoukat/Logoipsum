@@ -41,10 +41,14 @@ export default function ProfitLeaderboard() {
           textAlign: "center",
         }}
       >
-        <Typography fontSize={{ xs: 18, md: 24 }} fontWeight="bold" mb={1}>
+        <Typography
+          fontSize={{ xs: 18, md: "55px" }}
+          sx={{ fontFamily: "Bebas Neue" }}
+          fontWeight={400}
+        >
           THE PROFITABILITY LEADERBOARD
         </Typography>
-        <Typography fontSize={14} color="#d1fae5" mb={3}>
+        <Typography fontSize={"16px"} color="#d1fae5" mb={1}>
           This Leaderboard Displays The Betexperts That Have The Highest Profit
           Within The Selected Timeframe
         </Typography>
@@ -65,7 +69,7 @@ export default function ProfitLeaderboard() {
             }}
           >
             <Warning />
-            <Typography fontSize={13}>
+            <Typography fontSize={"14px"} fontWeight={400}>
               Minimum Bets To Qualify For 7D Leaderboard: 10 Bets
             </Typography>
           </Box>
@@ -247,6 +251,7 @@ export default function ProfitLeaderboard() {
                 justifyContent: "center",
                 alignItems: "center",
                 mx: "auto",
+                fontSize: "24px",
               }}
             >
               +
