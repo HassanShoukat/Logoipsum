@@ -48,7 +48,7 @@ export default function ProfitLeaderboard() {
         >
           THE PROFITABILITY LEADERBOARD
         </Typography>
-        <Typography fontSize={"16px"} color="#d1fae5" mb={1}>
+        <Typography fontSize={"16px"} color="#d1fae5" mb={"30px"}>
           This Leaderboard Displays The Betexperts That Have The Highest Profit
           Within The Selected Timeframe
         </Typography>
@@ -66,6 +66,7 @@ export default function ProfitLeaderboard() {
               display: { xs: "flex", md: "none", lg: "flex" },
               alignItems: "center",
               gap: 1,
+              marginRight: { sx: 0, lg: "40px" },
             }}
           >
             <Warning />
@@ -84,9 +85,8 @@ export default function ProfitLeaderboard() {
             <Box
               sx={{
                 display: { xs: "none", md: "flex" },
-                gap: 1,
                 background: "white",
-                p: 1,
+                p: "6px",
                 borderRadius: 1,
                 flexWrap: "wrap",
               }}
@@ -98,8 +98,8 @@ export default function ProfitLeaderboard() {
                   sx={{
                     textTransform: "none",
                     minWidth: "auto",
-                    px: 1.5,
-                    py: 0.5,
+                    px: "12.5px",
+                    py: "8px",
                     whiteSpace: "nowrap",
                     backgroundColor: timeframe === btn ? "black" : "white",
                     color: timeframe === btn ? "white" : "black",
@@ -112,13 +112,23 @@ export default function ProfitLeaderboard() {
             <Button
               variant="contained"
               sx={{
-                py: 1,
+                p: "14px",
                 backgroundColor: "white",
                 color: "black",
                 textTransform: "none",
               }}
             >
-              All Sports <ExpandMoreIcon />
+              All Sports
+              <Box
+                sx={{
+                  marginLeft: "10px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignContent: "center",
+                }}
+              >
+                <ExpandMoreIcon />
+              </Box>
             </Button>
           </Box>
         </Box>
@@ -131,7 +141,6 @@ export default function ProfitLeaderboard() {
             fontSize: 14,
             color: "gray",
             p: 1,
-            mt: 1,
             bgcolor: "rgba(0,0,0,15%)",
             borderRadius: 2,
             boxShadow: 4,
@@ -155,7 +164,7 @@ export default function ProfitLeaderboard() {
               },
               alignItems: "center",
               gap: 1,
-              py: 2,
+              py: "13px",
               px: { xs: 1, md: 2 },
               border: "1px solid #e5e7eb",
               borderTop: index === 0 ? "none" : "1px solid #e5e7eb",
@@ -193,6 +202,7 @@ export default function ProfitLeaderboard() {
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
+                    marginBottom: "6px",
                   }}
                 >
                   {item.name}

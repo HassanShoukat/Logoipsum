@@ -66,15 +66,15 @@ function HeroSection() {
   return (
     <Box
       sx={{
-        py: { xs: 4, md: 8 },
+        py: { xs: 4, md: "60px" },
         textAlign: "center",
         color: "white",
         background: "linear-gradient(to right,#052d61,#05244d,#5d7cb4)",
         minHeight: "100vh",
       }}
     >
-      <Box sx={{ maxWidth: 900, mx: "auto", px: 2 }}>
-        <Box mb={2}>
+      <Box sx={{ maxWidth: 950, mx: "auto" }}>
+        <Box mb={"24px"}>
           <Box
             component="img"
             src="/logo.png"
@@ -88,7 +88,7 @@ function HeroSection() {
             color: "#6ec1ff",
             fontSize: { xs: 11, md: "20px" },
             fontWeight: "semibold",
-            mb: 1,
+            mb: "5px",
           }}
         >
           THE SPORTSBETTING LEADERBOARDS
@@ -98,9 +98,9 @@ function HeroSection() {
             fontSize: {
               xs: "1.6rem",
               sm: "2rem",
-              md: "63px",
+              md: "64px",
             },
-            mb: 2,
+            mb: "5px",
             fontFamily: "Bebas Neue",
             fontWeight: 400,
             letterSpacing: 0,
@@ -113,7 +113,7 @@ function HeroSection() {
           sx={{
             color: "#cbd5e1",
             fontSize: { xs: 14, md: "18px" },
-            mb: 2,
+            mb: "24px",
             px: { xs: 1, md: 0 },
             fontWeight: 400,
           }}
@@ -128,7 +128,6 @@ function HeroSection() {
             textTransform: "none",
             px: { xs: 3, md: 4 },
             py: { xs: 1, md: 1.2 },
-            mb: { xs: 2, md: 4 },
             fontSize: { xs: 14, md: "16px" },
             fontWeight: 400,
             width: { xs: "100%", sm: "auto" },
@@ -148,10 +147,14 @@ function HeroSection() {
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          py: { xs: 2, md: 14 },
+          py: { xs: 2, md: "96px" },
         }}
       >
-        <Grid container spacing={{ xs: 2, md: 12 }} justifyContent="center">
+        <Grid
+          container
+          spacing={{ xs: 2, md: "120px" }}
+          justifyContent="center"
+        >
           {cards.map((card, i) => (
             <Grid
               key={i}
@@ -171,7 +174,7 @@ function HeroSection() {
               >
                 <CardContent
                   sx={{
-                    p: { xs: 2.5, md: 3 },
+                    p: { xs: 2, md: "20px" },
                   }}
                 >
                   <Typography
@@ -179,6 +182,7 @@ function HeroSection() {
                     sx={{
                       fontSize: { xs: 16, md: "20px" },
                       fontWeight: 600,
+                      mb: "4px",
                     }}
                   >
                     {card.title}
@@ -186,7 +190,7 @@ function HeroSection() {
                   <Typography
                     sx={{
                       color: "gray",
-                      mb: 1,
+                      mb: "12px",
                       fontSize: { xs: 10, md: "12px" },
                       fontWeight: 400,
                     }}
@@ -223,6 +227,7 @@ function HeroSection() {
                           sx={{
                             fontSize: { xs: 13, md: "15px" },
                             fontWeight: 600,
+                            mb: "4px",
                           }}
                         >
                           {item.title}
@@ -242,7 +247,6 @@ function HeroSection() {
                     fullWidth
                     variant="contained"
                     sx={{
-                      mt: 2,
                       textTransform: "none",
                       fontSize: { xs: 14, md: 15 },
                       py: { xs: 1, md: 1.2 },

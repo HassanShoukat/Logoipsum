@@ -7,7 +7,8 @@ function TransparentSportsbetting() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        p: 2,
+        p: "32px",
+        pb: "0",
       }}
     >
       <Box
@@ -21,12 +22,13 @@ function TransparentSportsbetting() {
           overflow: "hidden",
         }}
       >
-        <Box sx={{ p: { xs: 1, md: 2 }, flex: 1 }}>
+        <Box sx={{ p: { xs: 1, md: "24px 24px 0" }, flex: 1 }}>
           <Typography
             sx={{
-              fontSize: { xs: "16px", md: "30px" },
+              fontSize: { xs: "16px", md: "32px" },
               fontWeight: "semibold",
               letterSpacing: 0,
+              maxWidth: "900px",
             }}
           >
             The Most Transparent Sportsbetting Location
@@ -35,7 +37,7 @@ function TransparentSportsbetting() {
             sx={{
               fontSize: { xs: 13, md: "18px" },
               color: "#bfdbfe",
-              mb: 2,
+              mb: "20px",
             }}
           >
             Subscribe To World Class Sportbettors On Display Right In Front Of
@@ -48,6 +50,8 @@ function TransparentSportsbetting() {
               backgroundColor: "#2ea3f2",
               "&:hover": { backgroundColor: "#1e88e5" },
               fontSize: "16px",
+              px: 3,
+              py: 1.5,
             }}
           >
             View Leaderboards

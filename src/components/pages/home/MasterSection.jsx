@@ -25,7 +25,7 @@ function MasterSection() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        p: 2,
+        px: "32px",
       }}
     >
       <Box
@@ -43,7 +43,7 @@ function MasterSection() {
             color: "#2563eb",
             fontSize: "16px",
             fontWeight: 700,
-            mb: 1,
+            mb: 0.5,
           }}
         >
           The Master Sportsbook
@@ -53,7 +53,7 @@ function MasterSection() {
           justifyContent="space-between"
           alignItems={{ xs: "flex-start", md: "center" }}
           spacing={2}
-          mb={1}
+          mb={"20px"}
         >
           <Box>
             <Typography
@@ -61,6 +61,7 @@ function MasterSection() {
                 fontSize: { xs: 20, md: "32px" },
                 fontWeight: "semibold",
                 color: "#1f2937",
+                mb: "4px",
               }}
             >
               Bet On the Master Sportsbook & Find the Best Odds
@@ -88,12 +89,18 @@ function MasterSection() {
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },
               fontSize: "16px",
+              px: "24px",
+              py: "12px",
             }}
           >
             The Master Sportsbook
           </Button>
         </Stack>
-        <Stack direction={{ xs: "column", md: "row" }} spacing={2} mb={4}>
+        <Stack
+          direction={{ xs: "column", md: "row" }}
+          spacing={"12px"}
+          mb={"20px"}
+        >
           {cards.map((text, index) => (
             <Box
               key={index}
@@ -134,6 +141,7 @@ function MasterSection() {
                   height: 24,
                   display: "block",
                   margin: "0 auto",
+                  py: "20px",
                 }}
               />
             </SwiperSlide>

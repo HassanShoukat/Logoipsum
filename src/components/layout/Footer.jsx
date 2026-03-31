@@ -74,7 +74,7 @@ function Footer() {
             alignItems: { xs: "flex-start", md: "center" },
             borderBottom: "1px solid #ffffff33",
             pb: 3,
-            mb: 4,
+            mb: "76px",
             gap: 2,
           }}
         >

@@ -34,7 +34,7 @@ function Navbar({ activeMenu, setActiveMenu }) {
           display: "flex",
           justifyContent: "space-between",
           px: { xs: 2, md: "32px" },
-          py: "16px",
+          py: "14px",
         }}
       >
         <Box sx={{ width: 180 }}>
@@ -44,7 +44,9 @@ function Navbar({ activeMenu, setActiveMenu }) {
           sx={{
             display: { xs: "none", lg: "flex" },
             gap: "32px",
-            px: 2,
+            "@media (max-width:1300px)": {
+              gap: "24px",
+            },
           }}
         >
           {menus.map((menu, index) => (
@@ -54,7 +56,7 @@ function Navbar({ activeMenu, setActiveMenu }) {
               sx={{
                 cursor: "pointer",
                 color: activeMenu === menu ? "white" : "#FFFEFE80",
-                fontWeight: activeMenu === menu ? 600 : 400,
+                fontWeight: activeMenu === menu ? 700 : 400,
                 "&:hover": { color: "white" },
                 fontSize: "16px",
               }}

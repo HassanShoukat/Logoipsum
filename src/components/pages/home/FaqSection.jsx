@@ -79,7 +79,8 @@ function FaqSection() {
       sx={{
         display: "flex",
         justifyContent: "center",
-        p: 2,
+        px: "32px",
+        py: "24px",
       }}
     >
       <Paper
@@ -93,19 +94,17 @@ function FaqSection() {
         }}
       >
         <Typography
-          sx={{ color: "#2563eb", fontSize: "16px", fontWeight: 700, mb: 1 }}
+          sx={{ color: "#2563eb", fontSize: "16px", fontWeight: 700, mb: 0.5 }}
         >
           Availability
         </Typography>
-
         <Typography
           fontWeight={"semibold"}
-          mb={1}
+          mb={2.5}
           sx={{ fontSize: { sx: 20, md: "32px" } }}
         >
           Frequently asked questions
         </Typography>
-
         {faqs.map((faq, index) => (
           <Accordion
             key={index}

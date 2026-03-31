@@ -10,7 +10,8 @@ export default function Betleaders() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        p: 2,
+        px: "32px",
+        py: "24px",
       }}
     >
       <Box sx={{ maxWidth: 1150, width: "100%" }}>
@@ -23,7 +24,7 @@ export default function Betleaders() {
             flexDirection: { xs: "column", md: "row" },
             alignItems: "center",
             justifyContent: "space-between",
-            gap: { xs: 4, md: 10 },
+            gap: { xs: 4, lg: 10 },
           }}
         >
           <Box sx={{ width: { md: "50%" } }}>
@@ -32,7 +33,7 @@ export default function Betleaders() {
                 fontSize: { sx: 20, md: "32px" },
                 fontWeight: "semibold",
                 color: "#1f2937",
-                mb: 2,
+                mb: "24px",
               }}
             >
               Why Betleaders?
@@ -86,7 +87,7 @@ export default function Betleaders() {
                 fontWeight: 600,
                 fontWidth: "semibold",
                 fontSize: "20px",
-                mt: 2,
+                mt: 3,
               }}
             >
               That's where Betleaders Comes in!
@@ -97,8 +98,9 @@ export default function Betleaders() {
               background: "linear-gradient(to right,#031C46,#06409E)",
               borderRadius: 2,
               px: 2,
-              py: 3,
-              display: { xs: "none", md: "block" },
+              py: "28px",
+              width: "449px",
+              display: { xs: "none", lg: "block" },
             }}
           >
             {payouts.map((value, index) => (
@@ -109,13 +111,12 @@ export default function Betleaders() {
                   justifyContent: "space-between",
                   alignItems: "center",
                   borderRadius: 1,
-                  px: 2,
-                  py: 1.5,
-                  width: 300,
-                  ml: index === 0 ? 0 : index === 1 ? 1 : index === 2 ? 3 : 5,
+                  p: "20px",
+                  width: 357,
+                  ml: index === 0 ? 0 : index === 1 ? 1 : index === 2 ? 4 : 8,
                   backgroundColor: index === 3 ? "#EAEEF0" : "white",
                   color: index === 3 ? "#1e3a8a" : "#374151",
-                  mb: 1.5,
+                  mb: index === 3 ? 0 : "16px",
                 }}
               >
                 <Typography sx={{ fontSize: "16px", fontWeight: "bold" }}>

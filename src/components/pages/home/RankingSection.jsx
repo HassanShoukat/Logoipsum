@@ -15,31 +15,40 @@ function RankingSection() {
       sx={{
         display: "flex",
         justifyContent: "center",
-        p: 2,
+        px: "32px",
+        py: "24px",
       }}
     >
       <Paper sx={{ maxWidth: 1150, width: "100%", p: 3, borderRadius: 2 }}>
-        <Box mb={4}>
+        <Box mb={"20px"}>
           <Typography
-            sx={{ color: "#2563eb", fontSize: "16px", fontWeight: 700 }}
+            sx={{
+              color: "#2563eb",
+              fontSize: "16px",
+              fontWeight: 700,
+              mb: "4px",
+            }}
           >
             Complete Transparency
           </Typography>
           <Typography
             fontWeight={"semibold"}
-            mt={1}
-            sx={{ fontSize: { sx: 20, md: "32px" } }}
+            sx={{ fontSize: { sx: 20, md: "32px" }, mb: "4px" }}
           >
             Ranking Betexperts On The Leaderboards
           </Typography>
-          <Typography fontSize={"16px"} color="text.secondary" mt={1}>
+          <Typography fontSize={"16px"} color="text.secondary">
             Betleaders empowers you to follow self-proclaimed expert sports
             betters by ranking
             <br /> them on the ultimate tool for transparency and trust: the
             sports betting leaderboards.
           </Typography>
         </Box>
-        <Stack direction={{ xs: "column", md: "row" }} spacing={2} mb={2}>
+        <Stack
+          direction={{ xs: "column", md: "row" }}
+          spacing={"20px"}
+          mb={"20px"}
+        >
           {RankingData.map((item, index) => (
             <Box key={item.number} sx={{ flex: 1 }}>
               <Card
@@ -49,7 +58,7 @@ function RankingSection() {
                   height: "100%",
                 }}
               >
-                <CardContent>
+                <CardContent sx={{ p: "20px" }}>
                   <Box
                     sx={{
                       width: 32,
@@ -100,7 +109,7 @@ function RankingSection() {
           }}
         >
           <Box>
-            <Typography fontWeight={"semibold"} fontSize={"20px"}>
+            <Typography fontWeight={"semibold"} fontSize={"20px"} mb={"4px"}>
               Want to finally be a profitable sportsbettor?
             </Typography>
             <Typography fontSize={"16px"} sx={{ color: "#bfdbfe" }}>
@@ -115,6 +124,8 @@ function RankingSection() {
               textTransform: "none",
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },
+              py: "12px",
+              px: "24px",
             }}
           >
             Choose Your Path

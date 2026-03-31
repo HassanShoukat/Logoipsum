@@ -17,7 +17,7 @@ export default function LeaderboardSection() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        p: 2,
+        px: "32px",
       }}
     >
       <Box
@@ -26,7 +26,7 @@ export default function LeaderboardSection() {
           width: "100%",
           backgroundColor: "white",
           borderRadius: 2,
-          p: { xs: 3, md: 4 },
+          p: { xs: 2, md: 3 },
         }}
       >
         <Box
@@ -44,13 +44,12 @@ export default function LeaderboardSection() {
               sx={{
                 fontWeight: "semibold",
                 color: "black",
-                mb: 0.5,
+                mb: 1,
                 fontSize: { sx: 20, md: "32px" },
               }}
             >
               The Sportsbetting Leaderboards
             </Typography>
-
             <Typography
               sx={{ color: "gray", fontSize: "16px", fontWeight: 400 }}
             >
@@ -58,7 +57,6 @@ export default function LeaderboardSection() {
               <br /> Best Sportsbettors On The Internet
             </Typography>
           </Box>
-
           <Button
             variant="contained"
             sx={{
@@ -67,6 +65,8 @@ export default function LeaderboardSection() {
               "&:hover": { backgroundColor: "#2563eb" },
               fontSize: "16px",
               fontWeight: 400,
+              py: "12px",
+              px: "24px",
             }}
           >
             View Leaderboards
@@ -77,7 +77,7 @@ export default function LeaderboardSection() {
           onChange={handleChange}
           sx={{
             borderBottom: "1px solid #e5e7eb",
-            mb: 1,
+            mb: "26px",
           }}
         >
           <Tab

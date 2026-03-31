@@ -8,7 +8,8 @@ function AccountSection() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        p: 2,
+        px: "32px",
+        py: "24px",
       }}
     >
       <Paper
@@ -22,14 +23,19 @@ function AccountSection() {
       >
         <Typography
           variant="body2"
-          sx={{ color: "#2563eb", mb: 1, fontSize: "16px", fontWeight: 700 }}
+          sx={{
+            color: "#2563eb",
+            mb: "4px",
+            fontSize: "16px",
+            fontWeight: 700,
+          }}
         >
           Account Type
         </Typography>
-        <Typography fontWeight={"semibold"} fontSize={"32px"}>
+        <Typography fontWeight={"semibold"} fontSize={"32px"} mb={0.5}>
           Choose Your Own Path On Betleaders
         </Typography>
-        <Typography fontSize={"16px"} sx={{ color: "gray", mb: 2 }}>
+        <Typography fontSize={"16px"} sx={{ color: "gray", mb: "20px" }}>
           Choose Your Account Type And See How Easy It Is To Make Money
           Sportsbetting
         </Typography>
@@ -37,7 +43,7 @@ function AccountSection() {
           sx={{
             display: "grid",
             gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-            gap: 2,
+            gap: 2.5,
           }}
         >
           {AccountData.map((account, index) => {
@@ -49,7 +55,7 @@ function AccountSection() {
                 sx={{
                   border: "1px solid #e5e7eb",
                   borderRadius: 3,
-                  p: 2,
+                  p: 3,
                   bgcolor: "#f3f4f6",
                 }}
               >
@@ -61,7 +67,7 @@ function AccountSection() {
                 </Typography>
                 <Stack
                   direction="row"
-                  spacing={2}
+                  spacing={1}
                   alignItems="center"
                   sx={{ borderBottom: { md: "1px solid rgb(2, 28, 67,25%)" } }}
                 >
@@ -71,20 +77,20 @@ function AccountSection() {
                   <Stack>
                     <Typography
                       fontWeight="semibold"
-                      sx={{ fontSize: { sx: "10px", md: "20px" } }}
+                      sx={{ fontSize: { sx: "10px", md: "20px" }, mb: "4px" }}
                     >
                       {account.title}
                     </Typography>
                     <Typography
                       color="text.secondary"
-                      mb={1}
+                      mb={2}
                       sx={{ fontSize: { sx: "10px", md: "14px" } }}
                     >
                       {account.description}
                     </Typography>
                   </Stack>
                 </Stack>
-                <Stack spacing={1}>
+                <Stack spacing={2}>
                   {account.items.map((item, i) => (
                     <Stack key={i} direction="row" spacing={2}>
                       <Typography
@@ -116,7 +122,7 @@ function AccountSection() {
                 <Button
                   variant="contained"
                   sx={{
-                    mt: 1,
+                    py: "12px",
                     fontSize: "16px",
                     backgroundColor: index === 0 ? "#071d3a" : "#8E52FF",
                     "&:hover": {

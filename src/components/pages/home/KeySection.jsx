@@ -8,7 +8,7 @@ function KeySection() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        p: 2,
+        px: "32px",
       }}
     >
       <Box
@@ -26,7 +26,7 @@ function KeySection() {
             color: "#2563eb",
             fontSize: "16px",
             fontWeight: 700,
-            mb: 1,
+            mb: "4px",
           }}
         >
           The Key To Trust & Transparency In Betting
@@ -36,7 +36,7 @@ function KeySection() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            mb: 1,
+            mb: "20px",
             flexDirection: { xs: "column", md: "row" },
             gap: { xs: 2, md: 0 },
           }}
@@ -47,6 +47,7 @@ function KeySection() {
                 fontSize: { xs: 20, md: "32px" },
                 fontWeight: "semibold",
                 color: "#1f2937",
+                mb: "4px",
               }}
             >
               Leaderboards Drive Your Betting Success
@@ -71,12 +72,14 @@ function KeySection() {
               textTransform: "none",
               backgroundColor: "#3b82f6",
               "&:hover": { backgroundColor: "#2563eb" },
+              py: "12px",
+              px: "24px",
             }}
           >
             Get Started Now
           </Button>
         </Box>
-        <Stack direction={{ xs: "column", md: "row" }} spacing={2}>
+        <Stack direction={{ xs: "column", md: "row" }} spacing={"20px"}>
           {ComparisonData.map((card, index) => {
             const Icon = card.icon;
             return (
@@ -87,7 +90,7 @@ function KeySection() {
                   border: "1px solid #e5e7eb",
                   borderRadius: 2,
                   bgcolor: "#f3f4f6",
-                  p: 2,
+                  p: 3,
                 }}
               >
                 <Box
@@ -99,11 +102,12 @@ function KeySection() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
+                    mb: 1,
                   }}
                 >
                   <Icon />
                 </Box>
-                <Box display="flex" alignItems="center" mb={1}>
+                <Box display="flex" alignItems="center" mb={2}>
                   <Typography
                     fontWeight={"semibold"}
                     fontSize={"20px"}
@@ -116,7 +120,12 @@ function KeySection() {
                   {card.items.map((item, i) => {
                     const ItemIcon = item.icon;
                     return (
-                      <Box key={i} display="flex" alignItems="center" gap={1}>
+                      <Box
+                        key={i}
+                        display="flex"
+                        alignItems="center"
+                        gap={"4px"}
+                      >
                         <ItemIcon />
                         <Typography fontSize={"16px"} color="#6b7280">
                           {item.text}

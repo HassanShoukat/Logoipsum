@@ -41,7 +41,8 @@ function Sidebar() {
         height: "100%",
         bgcolor: "#06285A",
         color: "#fff",
-        p: 2,
+        py: "24px",
+        px: "12px",
       }}
     >
       <Box
