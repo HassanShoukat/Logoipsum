@@ -4,15 +4,15 @@ import { Box, CssBaseline } from "@mui/material";
 import Navbar from "./components/layout/Navbar";
 import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/layout/Footer";
-import HeroSection from "./components/home/HeroSection";
-import TransparentSportsbetting from "./components/home/TransparentSportsbetting";
-import Betleaders from "./components/home/Betleaders";
-import LeaderboardSection from "./components/home/LeaderboardSection";
-import RankingSection from "./components/home/RankingSection";
-import FaqSection from "./components/home/FaqSection";
-import KeySection from "./components/home/KeySection";
-import MasterSection from "./components/home/MasterSection";
-import AccountSection from "./components/home/AccountSection";
+import HeroSection from "./components/pages/home/HeroSection";
+import TransparentSportsbetting from "./components/pages/home/TransparentSportsbetting";
+import Betleaders from "./components/pages/home/Betleaders";
+import LeaderboardSection from "./components/pages/home/LeaderboardSection";
+import RankingSection from "./components/pages/home/RankingSection";
+import FaqSection from "./components/pages/home/FaqSection";
+import KeySection from "./components/pages/home/KeySection";
+import MasterSection from "./components/pages/home/MasterSection";
+import AccountSection from "./components/pages/home/AccountSection";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState("Home");

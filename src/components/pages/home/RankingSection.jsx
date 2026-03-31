@@ -1,4 +1,4 @@
-import { RankingData } from "../../utils/RankingData";
+import { RankingData } from "../../../utils/RankingData";
 import {
   Box,
   Typography,

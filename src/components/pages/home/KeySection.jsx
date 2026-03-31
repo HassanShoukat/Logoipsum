@@ -1,5 +1,5 @@
 import { Box, Typography, Stack, Button } from "@mui/material";
-import { ComparisonData } from "../../utils/ComparisonData";
+import { ComparisonData } from "../../../utils/ComparisonData";
 
 function KeySection() {
   return (

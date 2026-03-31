@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Typography, Button, Avatar, Chip } from "@mui/material";
 
-import Warning from "../../../icons/Warning";
+import Warning from "../../../../icons/Warning";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function ProfitLeaderboard() {

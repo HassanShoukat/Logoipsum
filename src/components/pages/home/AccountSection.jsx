@@ -1,5 +1,5 @@
 import { Box, Typography, Stack, Paper, Button } from "@mui/material";
-import { AccountData } from "../../utils/AccountData";
+import { AccountData } from "../../../utils/AccountData";
 
 function AccountSection() {
   return (

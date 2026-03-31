@@ -7,11 +7,11 @@ import {
   Button,
 } from "@mui/material";
 
-import ChatIcon from "../../icons/ChatIcon";
-import Statusicon from "../../icons/Statusicon";
-import Shopicon from "../../icons/Shopicon";
-import Subscribeicon from "../../icons/Subscribeicon";
-import Bellicon from "../../icons/Bellicon";
+import ChatIcon from "../../../icons/ChatIcon";
+import Statusicon from "../../../icons/Statusicon";
+import Shopicon from "../../../icons/Shopicon";
+import Subscribeicon from "../../../icons/Subscribeicon";
+import Bellicon from "../../../icons/Bellicon";
 
 function HeroSection() {
   const cards = [
