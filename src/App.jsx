@@ -13,6 +13,7 @@ import FaqSection from "./components/pages/home/FaqSection";
 import KeySection from "./components/pages/home/KeySection";
 import MasterSection from "./components/pages/home/MasterSection";
 import AccountSection from "./components/pages/home/AccountSection";
+import PageComingSoon from "./components/pages/comingsoon/PageComingSoon";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -33,26 +34,29 @@ function App() {
       <Navbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
       <Box sx={{ display: "flex", flex: 1 }}>
         <Sidebar />
-        <Box
-          sx={{
-            minHeight: "100vh",
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-            overflowX: "hidden",
-            backgroundColor: "#f3f4f6",
-          }}
-        >
-          <HeroSection />
-          <TransparentSportsbetting />
-          <Betleaders />
-          <LeaderboardSection />
-          <RankingSection />
-          <KeySection />
-          <AccountSection />
-          <MasterSection />
-          <FaqSection />
-        </Box>
+        {activeMenu === "Home" && (
+          <Box
+            sx={{
+              minHeight: "100vh",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              overflowX: "hidden",
+              backgroundColor: "#f3f4f6",
+            }}
+          >
+            <HeroSection />
+            <TransparentSportsbetting />
+            <Betleaders />
+            <LeaderboardSection />
+            <RankingSection />
+            <KeySection />
+            <AccountSection />
+            <MasterSection />
+            <FaqSection />
+          </Box>
+        )}
+        {activeMenu !== "Home" && <PageComingSoon page={activeMenu} />}
       </Box>
       <Footer />
     </Box>
