@@ -118,13 +118,9 @@ function AccountSection() {
                   sx={{
                     mt: 1,
                     fontSize: "16px",
-                    backgroundColor: account.buttonClass.includes("071d3a")
-                      ? "#071d3a"
-                      : "#8E52FF",
+                    backgroundColor: index === 0 ? "#071d3a" : "#8E52FF",
                     "&:hover": {
-                      backgroundColor: account.buttonClass.includes("071d3a")
-                        ? "#000"
-                        : "#6d28d9",
+                      backgroundColor: index === 0 ? "#000" : "#6d28d9",
                     },
                   }}
                 >

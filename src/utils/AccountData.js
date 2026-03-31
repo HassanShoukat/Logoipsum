@@ -8,7 +8,6 @@ export const AccountData = [
     title: "Become a betexpert",
     description: "Showcase Your Sportsbetting Skills & Get Ranked",
     buttonText: "Become a betexpert",
-    buttonClass: "bg-[#071d3a] hover:bg-black",
     items: [
       {
         number: "1",
@@ -43,7 +42,6 @@ export const AccountData = [
     title: "Become a subscriber",
     description: "Receive Bets From The Internets Greatest Sportsbettors",
     buttonText: "Become a subscriber",
-    buttonClass: "bg-[#8E52FF] hover:bg-purple-700",
     items: [
       {
         number: "1",
